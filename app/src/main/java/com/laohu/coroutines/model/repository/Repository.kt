@@ -85,7 +85,7 @@ object Repository {
     }
 
     /**
-     * 两个请求在子线程中并发执行
+     * Two Requests happens in parallel.
      */
     suspend fun queryAsyncWithContextForNoAwait(): List<Gank> {
         return withContext(Dispatchers.IO) {

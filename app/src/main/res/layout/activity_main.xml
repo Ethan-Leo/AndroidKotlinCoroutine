@@ -18,6 +18,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
+            android:textSize="12sp"
             android:text="Switch Coroutine -Send Request One by One"/>
 
     <Button
@@ -28,6 +29,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
+            android:textSize="12sp"
             android:text="No switch Coroutine -Send Request One by One"/>
 
     <Button
@@ -38,6 +40,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
+            android:textSize="12sp"
             android:text="Switch Coroutine -Send Request in parallel"/>
 
     <Button
@@ -48,6 +51,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
+            android:textSize="12sp"
             android:text="Switch Coroutine Send Request in parallel"/>
 
     <Button
@@ -58,6 +62,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
+            android:textSize="12sp"
             android:text="Adapter Coroutine Request"/>
 
     <Button
@@ -68,6 +73,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
+            android:textSize="12sp"
             android:text="Retrofit Coroutine Official Support"/>
 
     <Button
@@ -78,6 +84,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
+            android:textSize="12sp"
             android:text="Cancel Request"/>
 
     <TextView
