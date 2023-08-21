@@ -1,10 +1,10 @@
 package com.laohu.coroutines
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.laohu.coroutines.base.BasePresenter
 import com.laohu.coroutines.base.MvpPresenter
 import com.laohu.coroutines.base.MvpView
@@ -44,7 +44,7 @@ class MainPresenter: MainContract.Presenter, BasePresenter<MainContract.View>() 
                 e.printStackTrace()
                 view.showLoadingErrorView()
             } finally {
-                Log.d(TAG, "耗时：${System.currentTimeMillis() - time}")
+                Log.d(TAG, "Spend: ${System.currentTimeMillis() - time}")
             }
         }
     }
@@ -60,7 +60,7 @@ class MainPresenter: MainContract.Presenter, BasePresenter<MainContract.View>() 
                 e.printStackTrace()
                 view.showLoadingErrorView()
             } finally {
-                Log.d(TAG, "耗时：${System.currentTimeMillis() - time}")
+                Log.d(TAG, "Spend: ${System.currentTimeMillis() - time}")
             }
         }
     }
@@ -93,7 +93,7 @@ class MainPresenter: MainContract.Presenter, BasePresenter<MainContract.View>() 
                 e.printStackTrace()
                 view.showLoadingErrorView()
             } finally {
-                Log.d(TAG, "耗时：${System.currentTimeMillis() - time}")
+                Log.d(TAG, "Spend: ${System.currentTimeMillis() - time}")
             }
         }
     }
@@ -109,7 +109,7 @@ class MainPresenter: MainContract.Presenter, BasePresenter<MainContract.View>() 
                 e.printStackTrace()
                 view.showLoadingErrorView()
             } finally {
-                Log.d(TAG, "耗时：${System.currentTimeMillis() - time}")
+                Log.d(TAG, "Spend: ${System.currentTimeMillis() - time}")
             }
         }
     }
@@ -125,13 +125,13 @@ class MainPresenter: MainContract.Presenter, BasePresenter<MainContract.View>() 
                 e.printStackTrace()
                 view.showLoadingErrorView()
             } finally {
-                Log.d(TAG, "耗时：${System.currentTimeMillis() - time}")
+                Log.d(TAG, "Spend: ${System.currentTimeMillis() - time}")
             }
         }
     }
 }
 
-class MainActivity : AppCompatActivity(), MainContract.View {
+class MainActivity : AppCompatActivity(0), MainContract.View {
     private val presenter = MainPresenter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -167,14 +167,14 @@ class MainActivity : AppCompatActivity(), MainContract.View {
 
     override fun showLoadingSuccessView(granks: List<Gank>) {
         loadingBar.hideSelf()
-        textView.text = "请求结束，数据条数：${granks.size}"
-        Toast.makeText(this, "加载成功", Toast.LENGTH_SHORT).show()
-        Log.d(TAG, "请求结果：$granks")
+        textView.text = "Request Over, the number of results: ${granks.size}"
+        Toast.makeText(this, "load successfully", Toast.LENGTH_SHORT).show()
+        Log.d(TAG, "The result of request：$granks")
     }
 
     override fun showLoadingErrorView() {
         loadingBar.hideSelf()
-        Toast.makeText(this, "加载失败", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Fail to load", Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {

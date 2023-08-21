@@ -1,6 +1,7 @@
 package com.laohu.coroutines.base
 
-import android.support.annotation.UiThread
+import androidx.annotation.UiThread
+
 
 interface MvpPresenter<V: MvpView> {
 

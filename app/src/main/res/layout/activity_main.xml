@@ -18,7 +18,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="切换协程-顺序异步请求"/>
+            android:text="Switch Coroutine -Send Request One by One"/>
 
     <Button
             android:id="@+id/syncNoneWithContext"
@@ -28,7 +28,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="不切换协程-顺序异步请求"/>
+            android:text="No switch Coroutine -Send Request One by One"/>
 
     <Button
             android:id="@+id/asyncWithContextForAwait"
@@ -38,7 +38,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="切换协程-并发异步请求"/>
+            android:text="Switch Coroutine -Send Request in parallel"/>
 
     <Button
             android:id="@+id/asyncWithContextForNoAwait"
@@ -48,7 +48,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="切换协程-并发同步请求"/>
+            android:text="Switch Coroutine Send Request in parallel"/>
 
     <Button
             android:id="@+id/adapterBtn"
@@ -58,7 +58,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="Adapter适配协程请求"/>
+            android:text="Adapter Coroutine Request"/>
 
     <Button
             android:id="@+id/retrofitBtn"
@@ -68,7 +68,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="Retrofit协程官方支持"/>
+            android:text="Retrofit Coroutine Official Support"/>
 
     <Button
             android:id="@+id/cancelBtn"
@@ -78,7 +78,7 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="取消请求"/>
+            android:text="Cancel Request"/>
 
     <TextView
             android:id="@+id/textView"

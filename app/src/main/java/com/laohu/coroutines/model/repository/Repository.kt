@@ -12,7 +12,7 @@ const val TAG = "TestCoroutine"
 object Repository {
 
     /**
-     * 两个请求在子线程中顺序执行，非同时并发
+     * Two Requests are sent in background thread one by one, not in parallel.
      */
     suspend fun querySyncWithContext(): List<Gank> {
         return withContext(Dispatchers.Main) {
@@ -34,7 +34,7 @@ object Repository {
     }
 
     /**
-     * 两个请求在主线程中顺序执行，非同时并发
+     * Two Requests are sent in main thread one by one, not in parallel.
      */
     suspend fun querySyncNoneWithContext(): List<Gank> {
         return try {
